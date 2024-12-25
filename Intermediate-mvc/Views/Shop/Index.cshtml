@@ -1,0 +1,27 @@
+﻿@model List< Intermediate_mvc.Models.Entities.Product>
+
+<div class="table-responsive">
+    <table class="table table-bordered ">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Lorem</th>
+                <th scope="col">Ipsum</th>
+                <th scope="col">Dolor</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in @Model){
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Name</td>
+                    <td>@item.price</td>
+                    <td>@item.category</td>
+                </tr>
+
+            }
+           
+        </tbody>
+
+    </table>
+</div>
