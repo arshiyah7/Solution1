@@ -5,14 +5,5 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Intermediate_mvc.Controllers
 {
-    public class ShopContoroller : Controller
-    {
-        
-        public IActionResult Index()
-        {
-            //IProductRepository rep = new ProductRepository();
-            //List<Product> products = rep.GetAll();
-            return View();
-        }
-    }
+    
 }

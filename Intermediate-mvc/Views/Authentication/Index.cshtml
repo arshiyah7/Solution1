@@ -1,0 +1,25 @@
+﻿@model List< Intermediate_mvc.Models.Entities.User>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">نام</th>
+            <th scope="col">نام خانوادگی</th>
+            <th scope="col">رمزعبور</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            <tr>
+                <th scope="row">@user.Id</th>
+                <td>@user.Name</td>
+                <td>@user.LastName</td>
+                <td>@user.Password</td>
+            </tr>
+        }
+      
+       
+    </tbody>
+</table>
+

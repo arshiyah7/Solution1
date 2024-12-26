@@ -8,5 +8,7 @@ namespace Intermediate_mvc.Models.Interfaces
         public void ChangePrice(int id, int price);
 
         public void Add(Product p);
+        public List<Product> GetAll();
+        public void Delete(int id);
     }
 }

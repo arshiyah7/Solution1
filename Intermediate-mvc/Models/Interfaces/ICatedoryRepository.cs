@@ -2,9 +2,11 @@
 
 namespace Intermediate_mvc.Models.Interfaces
 {
-    public interface ICategory
+    public interface ICategoryRepository
     {
         public void Delet(int id);
         public Category GetById(int id);
+        public void Add(Category category);
+        public List<Category> GetAll();
     }
 }

@@ -1,0 +1,17 @@
+﻿<div class="container px-5 my-5">
+    <form  method = "post"asp-action="UserLogin" >
+        <div class="form-floating mb-3">
+            <input class="form-control" name="name" type="text" placeholder="name" data-sb-validations="required" />
+            <label for="name">Name</label>
+        </div>
+      
+        <div class="form-floating mb-3">
+            <input class="form-control" name="password" type="text" placeholder="Passord" data-sb-validations="required" />
+            <label for="password">Password</label>
+        </div>
+
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>

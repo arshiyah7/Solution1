@@ -1,0 +1,26 @@
+﻿@model List< Intermediate_mvc.Models.Entities.Category>
+
+<div class="table-responsive">
+    <table class="table table-bordered ">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">نام</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var cat in @Model)
+            {
+                <tr>
+                    <th scope="row">@cat.Id</th>
+                    <td>@cat.Name</td>
+
+                </tr>
+            }
+           
+          
+        </tbody>
+
+    </table>
+</div>

@@ -14,11 +14,11 @@ namespace Intermediate_mvc.Models.Repository
         {
             dbContext = new ShopDb();
         }
-        public string Add(Product product)
+        public void Add(Product product)
         {
         dbContext.Produc.Add(product);
             dbContext.SaveChanges();
-            return product.Name;
+           
         }
 
         public void ChangePrice(int id , int price)

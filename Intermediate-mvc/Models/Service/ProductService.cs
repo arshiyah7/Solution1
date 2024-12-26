@@ -6,16 +6,15 @@ namespace Intermediate_mvc.Models.Service
 {
     public class ProductService : IProductServices
     {
-        private readonly IProductServices services;
+       
         private readonly IProductRepository productsRepository;
         public ProductService()
         {
-            services = new ProductService();
             productsRepository = new ProductRepository();
         }
         public void Add(Product p)
         {
-
+            productsRepository.Add(p);
            
         }
 
@@ -23,6 +22,16 @@ namespace Intermediate_mvc.Models.Service
         {
             var p = productsRepository.GetById(id);
             productsRepository.ChangePrice(p.Id, price);
+        }
+
+        public void Delete(int id)
+        {
+            productsRepository.Delete(id);
+        }
+
+        public List<Product> GetAll()
+        {
+         return productsRepository.GetAll();
         }
     }
 }
